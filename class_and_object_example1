@@ -1,0 +1,41 @@
+class MyClass:
+    x=5
+p1=MyClass()
+print(p1.x)
+
+
+class Str:
+    x="hello"
+
+str=Str()
+print(str.x)
+
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+p1 =Person("john",36)
+print(p1.name)
+print(p1.age)
+
+class animal:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        
+    def __str__(self):
+        return f"{self.name}({self.age})"
+        
+
+p1 = animal ("dog",36)
+print(p1)
+
+class p:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def myfunc(self):
+        print("hello my name is"+ self.name)
+        print("I am %d" % self.age)
+p1= p ("Raymond",40)
+p1.myfunc()
